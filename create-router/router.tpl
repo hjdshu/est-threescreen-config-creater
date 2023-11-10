@@ -1,0 +1,1 @@
+export default {{routerCreateRouter data}}
