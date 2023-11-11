@@ -1,0 +1,78 @@
+SiiNunit
+{
+multimon_config : _nameless.17a.367f.c160 {
+ normalized_ui_x: 0.333333
+ normalized_ui_width: 0.333333
+ monitors: 3
+ monitors[0]: _nameless.17a.3677.3a70
+ monitors[1]: _nameless.17a.3677.3ef0
+ monitors[2]: _nameless.17a.3677.3d70
+}
+
+monitor_config : _nameless.17a.3677.3a70 {
+ name: center
+ normalized_x: 0.333333
+ normalized_y: 0.000000
+ normalized_width: 0.333333
+ normalized_height: 1.000000
+ horizontal_fov_relative_offset: 0.000000
+ vertical_fov_relative_offset: 0.000000
+ heading_offset: 0.000000
+ pitch_offset: 0.000000
+ roll_offset: 0.000000
+ camera_space_offset: (0.000000, 0.000000, 0.000000)
+ horizontal_fov_override: 56.442858
+ vertical_fov_override: 0.000000
+ frustum_subrect_x: 0.000000
+ frustum_subrect_y: 0.000000
+ frustum_subrect_width: 1.000000
+ frustum_subrect_height: 1.000000
+ render_interior: true
+ render_exterior: true
+}
+
+monitor_config : _nameless.17a.3677.3ef0 {
+ name: left
+ normalized_x: 0.000000
+ normalized_y: 0.000000
+ normalized_width: 0.333333
+ normalized_height: 1.000000
+ horizontal_fov_relative_offset: 0.000000
+ vertical_fov_relative_offset: 0.000000
+ heading_offset: 55.000000
+ pitch_offset: 0.000000
+ roll_offset: 0.000000
+ camera_space_offset: (0.000000, 0.000000, 0.000000)
+ horizontal_fov_override: 58.772192
+ vertical_fov_override: 32.974115
+ frustum_subrect_x: 0.000000
+ frustum_subrect_y: 0.000000
+ frustum_subrect_width: 0.934763
+ frustum_subrect_height: 1.000000
+ render_interior: true
+ render_exterior: true
+}
+
+monitor_config : _nameless.17a.3677.3d70 {
+ name: right
+ normalized_x: 0.666667
+ normalized_y: 0.000000
+ normalized_width: 0.333333
+ normalized_height: 1.000000
+ horizontal_fov_relative_offset: 0.000000
+ vertical_fov_relative_offset: 0.000000
+ heading_offset: -55.000000
+ pitch_offset: 0.000000
+ roll_offset: 0.000000
+ camera_space_offset: (0.000000, 0.000000, 0.000000)
+ horizontal_fov_override: 58.772192
+ vertical_fov_override: 32.974115
+ frustum_subrect_x: 0.065237
+ frustum_subrect_y: 0.000000
+ frustum_subrect_width: 0.934763
+ frustum_subrect_height: 1.000000
+ render_interior: true
+ render_exterior: true
+}
+
+}
