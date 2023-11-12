@@ -21,7 +21,7 @@ monitor_config : _nameless.17a.3677.3a70 {
  pitch_offset: 0.000000
  roll_offset: 0.000000
  camera_space_offset: (0.000000, 0.000000, 0.000000)
- horizontal_fov_override: 60.347438
+ horizontal_fov_override: 64.770198
  vertical_fov_override: 0.000000
  frustum_subrect_x: 0.000000
  frustum_subrect_y: 0.000000
@@ -43,11 +43,11 @@ monitor_config : _nameless.17a.3677.3ef0 {
  pitch_offset: 0.000000
  roll_offset: 0.000000
  camera_space_offset: (0.000000, 0.000000, 0.000000)
- horizontal_fov_override: 61.973386
- vertical_fov_override: 35.672706
+ horizontal_fov_override: 70.272832
+ vertical_fov_override: 37.084082
  frustum_subrect_x: 0.000000
  frustum_subrect_y: 0.000000
- frustum_subrect_width: 0.952962
+ frustum_subrect_width: 0.847685
  frustum_subrect_height: 1.000000
  render_interior: true
  render_exterior: true
@@ -65,11 +65,11 @@ monitor_config : _nameless.17a.3677.3d70 {
  pitch_offset: 0.000000
  roll_offset: 0.000000
  camera_space_offset: (0.000000, 0.000000, 0.000000)
- horizontal_fov_override: 61.973386
- vertical_fov_override: 35.672706
- frustum_subrect_x: 0.047038
+ horizontal_fov_override: 70.272832
+ vertical_fov_override: 37.084082
+ frustum_subrect_x: 0.152315
  frustum_subrect_y: 0.000000
- frustum_subrect_width: 0.952962
+ frustum_subrect_width: 0.847685
  frustum_subrect_height: 1.000000
  render_interior: true
  render_exterior: true
