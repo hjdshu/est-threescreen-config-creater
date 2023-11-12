@@ -4,9 +4,9 @@
       <div class="t1">欧卡三屏multimon_config.sii生成器</div>
       <p class="tipt">本计算方式由帖子 <a>https://tieba.baidu.com/p/5725691718</a> 提供, 本工具主要是按照原作者的计算方法来实现</p>
       <input placeholder="显示器宽度（毫米）" v-model="sw" type="number">
-      <div class="tips">显示器高度</div>
+      <div class="tips">单个显示器的宽度</div>
       <input placeholder="显示器高度（毫米）" v-model="sh" type="number">
-      <div class="tips">显示器宽度</div>
+      <div class="tips">单个显示器的高度</div>
       <input placeholder="人眼到显示器距离（毫米）" v-model="eyetoscrren" type="number">
       <div class="tips">人眼到中间显示器的距离, 此数值对fov的影响比较大，可根据实际情况加减此数值</div>
       <input placeholder="边框宽度（毫米）可以填负数" v-model="bickw" type="number">
