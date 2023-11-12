@@ -1,5 +1,24 @@
 {
+  "devDependencies": {
+    "electron-builder": "^22.8.1"
+  },
+  "author": "jake",
+  "scripts": {
+    "package": "electron-builder"
+  },
+  "build": {
+    "productName": "EST Config Creater",
+    "appId": "EST Config Creater",
+    "electronVersion": "10.1.2",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "icon": "app/favicon.ico"
+    }
+  },
   "dependencies": {
-    "handlebars": "^4.7.8"
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.12"
   }
 }

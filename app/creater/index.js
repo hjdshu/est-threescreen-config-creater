@@ -89,15 +89,27 @@ function creater (sw, sh, eyetoscrren, bickw, anglescreen) {
   }
 }
 
-let data = JSON.parse(JSON.stringify(creater(
-  697.68, // 显示器宽度475mm
-  392.26, // 显示器高度267.1875mm
-  550, // 眼睛到显示器距离372.800325mm
-  -3, // 屏幕边框宽度17.5mm
-  58 // 屏幕边框角度20度
-)));
-console.log(data)
+module.exports = function (options) {
+  // const data =  creater(...arguments)
+  // var result = template(data);
+  // // fs.writeFileSync(path.join('./', 'test.sii'), result)
+  // console.log(result)
 
-var result = template(data);
-fs.writeFileSync(path.join('./', 'test.sii'), result)
-console.log('文件写入成功，test.sii')
+  let data = JSON.parse(JSON.stringify(creater(
+    // 697.68, // 显示器宽度475mm
+    // 392.26, // 显示器高度267.1875mm
+    // 550, // 眼睛到显示器距离372.800325mm
+    // -3, // 屏幕边框宽度17.5mm
+    // 58 // 屏幕边框角度20度
+    options.sw,
+    options.sh,
+    options.eyetoscrren,
+    options.bickw,
+    options.anglescreen
+  )));
+  var result = template(data);
+  return result;
+  // console.log('文件写入成功，test.sii')
+};
+
+
