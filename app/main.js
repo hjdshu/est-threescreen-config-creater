@@ -23,7 +23,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     resizable: true,
     // maximizable: tr,
-    width: 800, height: 630,
+    width: 800, height: 700,
     // frame: false,
     title: 'EST Config Creater', 
     icon: path.join(__dirname, 'favicon.ico'),
