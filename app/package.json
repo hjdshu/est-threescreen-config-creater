@@ -1,10 +1,10 @@
 {
-  "name": "hello",
-  "version": "0.1.0",
+  "name": "est-threescreen-config-creater",
+  "version": "0.2.0",
   "private": true,
   "main": "main.js",
-  "author": "jake",
-  "description": "hello",
+  "author": "Jake",
+  "description": "EST Config Creater",
   "scripts": {
     "serve": "vite dev",
     "dev": "electron .",

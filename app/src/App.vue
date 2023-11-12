@@ -8,7 +8,7 @@
       <input placeholder="显示器高度（毫米）" v-model="sh" type="number">
       <div class="tips">显示器宽度</div>
       <input placeholder="人眼到显示器距离（毫米）" v-model="eyetoscrren" type="number">
-      <div class="tips">此数值对fov的影响比较大，可根据实际情况加减此数值</div>
+      <div class="tips">人眼到中间显示器的距离, 此数值对fov的影响比较大，可根据实际情况加减此数值</div>
       <input placeholder="边框宽度（毫米）可以填负数" v-model="bickw" type="number">
       <div class="tips">比如有三屏边框消除套件的，通常这里填负数，或者0等，可自由发挥</div>
       <input placeholder="显示器夹角（填小的那个夹角，比如120度，那就填60）" v-model="anglescreen" type="number">
