@@ -1,8 +1,6 @@
 est threescreen-config-creater, can help u for est threescreen config
 
 
-
-```
 ### build only support windows
 
 ### 1. dev
