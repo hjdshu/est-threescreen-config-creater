@@ -2,8 +2,9 @@ const Handlebars = require('handlebars');
 const fs = require('fs');
 const path = require('path');
 const source = fs.readFileSync(path.join(__dirname, './template.tpl'), 'utf8');
+const source_2p = fs.readFileSync(path.join(__dirname, './template_2p.tpl'), 'utf8');
 const template = Handlebars.compile(source);
-console.log(template)
+const template_2p = Handlebars.compile(source_2p);
 
 
 // 已知等腰三角形，A B C三条边，其中A = B， 其中已知C边长，和高H，求三角形A和B之间的夹角
@@ -94,7 +95,7 @@ module.exports = function (options) {
   // var result = template(data);
   // // fs.writeFileSync(path.join('./', 'test.sii'), result)
   // console.log(result)
-
+  const is2p = options.is2p || false;
   let data = JSON.parse(JSON.stringify(creater(
     // 697.68, // 显示器宽度475mm
     // 392.26, // 显示器高度267.1875mm
@@ -107,7 +108,12 @@ module.exports = function (options) {
     options.bickw,
     options.anglescreen
   )));
-  var result = template(data);
+  var result;
+  if (is2p) {
+    result = template_2p(data);
+  } else {
+    result = template(data);
+  }
   return result;
   // console.log('文件写入成功，test.sii')
 };
