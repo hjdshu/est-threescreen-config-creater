@@ -18,6 +18,7 @@
     "less-loader": "^7.0.1",
     "vite-plugin-vue2": "^2.0.3",
     "vue": "2.6.12",
+    "vue-i18n": "8",
     "vue-router": "^3.4.4",
     "vue-template-compiler": "2.6.12"
   },

@@ -115,7 +115,6 @@ ipcMain.on('create', (event, message) => {
 // 主进程
 ipcMain.on("ping", (event, arg) => {
   console.log(arg); // whoooooooh
-
 });
 
 // 如果你只想同时运行一个程序的时候
