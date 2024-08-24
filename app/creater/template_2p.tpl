@@ -1,8 +1,8 @@
 SiiNunit
 {
 multimon_config : _nameless.17a.367f.c160 {
- normalized_ui_x: 0.333333
- normalized_ui_width: 0.333333
+ normalized_ui_x: 0
+ normalized_ui_width: 0.5
  monitors: 2
  monitors[0]: _nameless.17a.3677.3a70
  monitors[1]: _nameless.17a.3677.3d70
@@ -10,9 +10,9 @@ multimon_config : _nameless.17a.367f.c160 {
 
 monitor_config : _nameless.17a.3677.3a70 {
  name: center
- normalized_x: 0.333333
+ normalized_x: 0
  normalized_y: 0.000000
- normalized_width: 0.333333
+ normalized_width: 0.5
  normalized_height: 1.000000
  horizontal_fov_relative_offset: 0.000000
  vertical_fov_relative_offset: 0.000000
@@ -32,9 +32,9 @@ monitor_config : _nameless.17a.3677.3a70 {
 
 monitor_config : _nameless.17a.3677.3d70 {
  name: right
- normalized_x: 0.666667
+ normalized_x: 0.5
  normalized_y: 0.000000
- normalized_width: 0.333333
+ normalized_width: 0.5
  normalized_height: 1.000000
  horizontal_fov_relative_offset: {{right.horizontal_fov_relative_offset}}
  vertical_fov_relative_offset: 0.000000

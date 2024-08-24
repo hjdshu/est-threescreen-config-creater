@@ -21,8 +21,8 @@
 
         <div class="bar" @click="changeLang($event, 'zh')">中文</div>
         <div class="bar" @click="changeLang($event, 'en')">English</div>
-        <div class="bar" @click="changeLang($event, 'ja')">日本語</div>
-        <div class="bar" @click="changeLang($event, 'ko')">한국어</div>
+        <!-- <div class="bar" @click="changeLang($event, 'ja')">日本語</div>
+        <div class="bar" @click="changeLang($event, 'ko')">한국어</div> -->
       </div>
     </div>
     <div v-if="!about">
