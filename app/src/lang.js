@@ -21,7 +21,7 @@ export default {
         inputNotFull: '请输入完整信息',
         returnText: '返回',
         useDesp: {
-            p1: '说明：用于计算《欧卡2》三屏参数，仅针对相同尺寸和分辨率的三台显示器。',
+            p1: '说明：用于计算《欧卡2》三屏参数，仅针对相同尺寸和分辨率的三台/两台显示器。',
             p2: '1. 用记事本打开 &lt;文档&gt;\Euro Truck Simulator 2\config.cfg 文件。',
             p3: '2. 将 r_multimon_mode 改为 4，g_console 改为 1，g_developer 改为 1，然后保存。',
             p4: '3. 在显卡驱动中设置三屏(双屏)连成一个屏幕。',
@@ -54,7 +54,7 @@ export default {
         inputNotFull: 'Please enter all information',
         returnText: 'Return',
         useDesp: {
-            p1: 'Instructions: Used to calculate the three-screen parameters for Euro Truck Simulator 2, applicable only to three monitors of the same size and resolution.',
+            p1: 'Instructions: Used to calculate the three-screen parameters for Euro Truck Simulator 2, applicable only to three（two） monitors of the same size and resolution.',
             p2: '1. Open the <Documents>\Euro Truck Simulator 2\config.cfg file with Notepad.',
             p3: '2. Set r_multimon_mode to 4, g_console to 1, and g_developer to 1, then save the file.',
             p4: '3. Configure the graphics card driver to set up the three（two） screens as a single display.',
