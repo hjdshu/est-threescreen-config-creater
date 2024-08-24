@@ -104,7 +104,7 @@ module.exports = function (options) {
   // // fs.writeFileSync(path.join('./', 'test.sii'), result)
   // console.log(result)
   const is2p = options.is2p || false;
-  const is2pleft = options.is2pleft || false;
+  const is2pLeft = options.is2pLeft || false;
   let data = JSON.parse(JSON.stringify(creater(
     // 697.68, // 显示器宽度475mm screen width
     // 392.26, // 显示器高度267.1875mm screen height
@@ -120,7 +120,7 @@ module.exports = function (options) {
   var result;
   if (is2p) {
     result = template_2p(data);
-  } else if (is2pleft) {
+  } else if (is2pLeft) {
     result = template_2p_left(data);
   } else {
     result = template(data);
