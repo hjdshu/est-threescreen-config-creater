@@ -35,7 +35,7 @@ export default {
     en: {
         hello: 'hello',
         lang: 'English',
-        title: 'Euro Truck Simulator 2 Three-Screen Multimon Config Generator (Compatible with the Same Size Dual-Screen Setup)',
+        title: 'Euro/American Truck Simulator 2/ Three-Screen Multimon Config Generator (Compatible with the Same Size Dual-Screen Setup)',
         desp: "This calculation method is provided by the post https://tieba.baidu.com/p/5725691718. This tool mainly implements the original author's calculation method.",
         about: "How to Use the Generated Config",
         btn1: 'Single Monitor Width',
