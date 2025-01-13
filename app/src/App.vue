@@ -84,8 +84,11 @@
         <button @click="tryCreater2pLeft">{{ $t("createbtn3") }}</button>
       </div>
       <br />
-      <button class="use" v-if="val" @click="about = true">{{ $t("about") }} >></button>
-      <textarea class="textarea" v-if="val" v-model="val" disabled></textarea>
+      <div class="createResult" v-if="val">
+        <button class="use" v-if="val" @click="about = true">{{ $t("about") }}</button>
+        <button style="margin-left: 10px;" @click="val=''">返回</button>
+        <textarea class="textarea" v-if="val" v-model="val" disabled></textarea>
+      </div>
       <br />
     </div>
     <div v-if="about">
@@ -135,11 +138,11 @@ export default {
     return {
       showWen: 1,
       val: "",
-      sw: null,
-      sh: null,
-      eyetoscrren: null,
-      bickw: null,
-      anglescreen: null,
+      sw: localStorage.getItem('est-config-sw') || null,
+      sh: localStorage.getItem('est-config-sh') || null,
+      eyetoscrren: localStorage.getItem('est-config-eyetoscrren') || null,
+      bickw: localStorage.getItem('est-config-bickw') || null,
+      anglescreen: localStorage.getItem('est-config-anglescreen') || null,
       about: false,
     };
   },
@@ -168,6 +171,14 @@ export default {
         Toast(this.$i18n.t('inputNotFull'));
         return;
       }
+
+      // 这里在localStorage里面保存一下
+      localStorage.setItem('est-config-sw', this.sw)
+      localStorage.setItem('est-config-sh', this.sh)
+      localStorage.setItem('est-config-eyetoscrren', this.eyetoscrren)
+      localStorage.setItem('est-config-bickw', this.bickw)
+      localStorage.setItem('est-config-anglescreen', this.anglescreen)
+
       let ipcRenderer = window.electron.ipcRenderer;
       //options.sw,
       // options.sh,
@@ -211,6 +222,17 @@ export default {
 }
 </style>
 <style lang="less" scoped>
+.createResult{
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+}
 .changelang {
   position: fixed;
   right: 20px;
@@ -272,8 +294,8 @@ export default {
 }
 .textarea {
   display: block;
-  width: 600px;
-  height: 200px;
+  width: 90%;
+  height: 600px;
   margin-bottom: 5px;
 }
 .desp {

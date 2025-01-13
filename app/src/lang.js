@@ -2,9 +2,9 @@ export default {
     zh: {
         hello: '你好',
         lang: '中文',
-        title: '欧卡三屏 Multimon Config 生成器（兼容相同尺寸的双屏方案）',
+        title: '欧卡/美卡三屏Multimon.Config生成器（兼容相同尺寸屏幕的双屏方案）',
         desp: "本计算方式由帖子 https://tieba.baidu.com/p/5725691718 提供，本工具主要是按照原作者的计算方法来实现。",
-        about: "生成文件使用方法",
+        about: "如何使用该配置？",
         btn1: '单个显示器的宽度',
         btn2: '单个显示器的高度',
         btn3: '人眼到中间显示器的距离',
@@ -22,13 +22,13 @@ export default {
         returnText: '返回',
         useDesp: {
             p1: '说明：用于计算《欧卡2》三屏参数，仅针对相同尺寸和分辨率的三台/两台显示器。',
-            p2: '1. 用记事本打开 &lt;文档&gt;\Euro Truck Simulator 2\config.cfg 文件。',
+            p2: '1. 用记事本打开 \/文档\/Euro Truck Simulator 2\/config.cfg 文件。',
             p3: '2. 将 r_multimon_mode 改为 4，g_console 改为 1，g_developer 改为 1，然后保存。',
             p4: '3. 在显卡驱动中设置三屏(双屏)连成一个屏幕。',
             p5: '4. 启动游戏，设置分辨率为最大，进入驾驶界面，按 ~ 键（主键盘 1 键左边）打开控制台。',
             p6: '5. 输入命令 multimon init three 回车，载入预设的三屏模式，然后输入命令 multimon save 保存设置。',
             p7: '6. 使用 Alt+Tab 切出游戏，打开 &lt;文档&gt;\Euro Truck Simulator 2\multimon_config.sii 文件。',
-            p8: '7. 将生成的内容全选并覆盖现有的 multimon_config.sii 文件。',
+            p8: '7. 将刚才生成的内容覆盖粘贴到现有的 multimon_config.sii 文件内并保存。',
             p9: '8. 使用 Alt+Tab 切回游戏，进入控制台输入命令 multimon reload 重载设置，完成。(如果不生效，重启游戏)'
         }
     },
@@ -37,7 +37,7 @@ export default {
         lang: 'English',
         title: 'Euro Truck Simulator 2 Three-Screen Multimon Config Generator (Compatible with the Same Size Dual-Screen Setup)',
         desp: "This calculation method is provided by the post https://tieba.baidu.com/p/5725691718. This tool mainly implements the original author's calculation method.",
-        about: "How to Use the Generated File",
+        about: "How to Use the Generated Config",
         btn1: 'Single Monitor Width',
         btn2: 'Single Monitor Height',
         btn3: 'Distance from Eye to Center Monitor',
@@ -55,7 +55,7 @@ export default {
         returnText: 'Return',
         useDesp: {
             p1: 'Instructions: Used to calculate the three-screen parameters for Euro Truck Simulator 2, applicable only to three（two） monitors of the same size and resolution.',
-            p2: '1. Open the <Documents>\Euro Truck Simulator 2\config.cfg file with Notepad.',
+            p2: '1. Open the <Documents>/\Euro Truck Simulator 2\/config.cfg file with Notepad.',
             p3: '2. Set r_multimon_mode to 4, g_console to 1, and g_developer to 1, then save the file.',
             p4: '3. Configure the graphics card driver to set up the three（two） screens as a single display.',
             p5: '4. Launch the game, set the resolution to the maximum, and enter the driving interface. Press the ~ key (located to the left of the number 1 key on the main keyboard) to open the console.',
