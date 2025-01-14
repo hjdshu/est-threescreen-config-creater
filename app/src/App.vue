@@ -83,17 +83,27 @@
         <button @click="tryCreater2p">{{ $t("createbtn2") }}</button>
         <button @click="tryCreater2pLeft">{{ $t("createbtn3") }}</button>
       </div>
-      <br />
+      <div class="line"></div>
+      <div class="srp">
+        <div>软件免费，如果对您有帮助，欢迎赞赏 ｜ 个人主页：https://space.bilibili.com/15476602</div>
+        <div class="zansma">
+          <button @click="showzanshang = 1">点击获取赞赏码</button>
+          <!-- <span>赞赏码：</span> -->
+        </div>
+      </div>
       <div class="createResult" v-if="val">
         <button class="use" v-if="val" @click="about = true">{{ $t("about") }}</button>
         <button style="margin-left: 10px;" @click="val=''">返回</button>
         <textarea class="textarea" v-if="val" v-model="val" disabled></textarea>
       </div>
-      <br />
     </div>
     <div v-if="about">
       <button @click="about = false">{{ $t("returnText") }}</button>
       <About></About>
+    </div>
+    <div class="zanimg" @click="showzanshang = 0" v-if="showzanshang">
+      <div class="close">返回</div>
+      <img src="./zansma.jpg" alt="">
     </div>
   </div>
 </template>
@@ -136,6 +146,7 @@ export default {
   },
   data() {
     return {
+      showzanshang: 0,
       showWen: 1,
       val: "",
       sw: localStorage.getItem('est-config-sw') || null,
@@ -222,6 +233,59 @@ export default {
 }
 </style>
 <style lang="less" scoped>
+.zanimg{
+  .close{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    border: 1px solid #acacac;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    color: #696969;
+    align-items: center;
+    justify-content: center;
+  }
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 60%;
+  }
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+  margin-top: 20px;
+}
+.srp{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #606060;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%; 
+  .th{
+    margin-top: 10px;
+  }
+}
+.zansma{
+  display: flex;
+  align-items: center;
+  span{
+    width: 80px;
+  }
+  margin-top: 10px;
+}
 .createResult{
   position: fixed;
   z-index: 0;
@@ -271,9 +335,13 @@ export default {
     }
   }
 }
-.btngroup button {
-  display: block;
+.btngroup{
+  display: flex;
   margin-bottom: 10px;
+  button {
+    display: block;
+    margin-right: 10px;
+  }
 }
 .use {
   margin-bottom: 10px;
@@ -295,7 +363,7 @@ export default {
 .textarea {
   display: block;
   width: 90%;
-  height: 600px;
+  height: 550px;
   margin-bottom: 5px;
 }
 .desp {
