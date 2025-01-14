@@ -4,7 +4,7 @@
   },
   "author": "jake",
   "scripts": {
-    "package": "electron-builder"
+    "package": "electron-builder --win"
   },
   "build": {
     "productName": "EST Config Creater",
